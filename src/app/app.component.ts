@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  password = '';
+  showSecret1 = false;
+  showSecret2 = false;
+  log  = [ 1 ];
+
+  onToggleShowSecret(){
+    this.showSecret2 = !this.showSecret2;
+  }
+  onAddNumber() {
+    this.log.push (this.log.length + 1);
+  }
 }
